@@ -12,7 +12,6 @@ any_entity
 permitted")
     end
   end
-
   def has_any_other_highlighted?(model)
     records = model.where(highlighted: true)
     if self.class == model
