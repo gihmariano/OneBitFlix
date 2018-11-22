@@ -1,11 +1,11 @@
 class DashboardService
 
- def initialize (type, user)
+ def initialize (type, user) #todo service tem metodo initialize e perform
   @type = type
   @user = user
  end
 
- def perform
+ def perform  # metodo perform chamado no dashboard controller
   send("group_by_#{@type}")
  end
 
